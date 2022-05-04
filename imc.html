@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+function calculaImc(altura, peso) {
+
+var imc = peso / (altura* altura) +1;
+mostra("O imc calculado é " + imc);
+}
+
+
+
+
+calculaImc(1.71, 73);
+calculaImc(1.72, 68);
+</script>
+
+<button>Em vez de espalharmos a fórmula do cálculo do IMC, criamos uma funcionalidade que está preparada - <br> se passarmos primeiro a altura, e depois o peso - para calcular o IMC, e exibir o valor, por meio da função mostra(). <br> Se a fórmula for alterada, o IMC é calculado pelo método antigo, + 1:</button>
+<br>
+<button>Só precisaremos alterar a função, não todos os pontos em que ela é chamada. <br> Nesta aula, trabalhamos com conceitos já conhecidos, entretanto estamos lidando com uma função que possui dois parâmetros.</button>
